@@ -27,13 +27,13 @@ import math
 try:
     print("Hello" / 2) # Raises TypeError (Python doesn't auto-convert to NaN)
 except TypeError:
-    print("Cannot divide string by number") # Unlike JavaScript, Python is strict about types
+    print("Cannot divide string by number") 
 
 print(math.nan)  # nan (Not a Number)
 print(type(math.nan)) # float (nan is considered float type in Python)
 
 try:
-    print(1 / 0) # Raises ZeroDivisionError (unlike JavaScript which returns inf)
+    print(1 / 0) # Raises ZeroDivisionError 
 except ZeroDivisionError:
     print("Cannot divide by zero")
 
@@ -97,9 +97,9 @@ print(int(s))   # 123 (convert to integer)
 print(int(True))  # 1
 print(int(False)) # 0
 
-# Implicit Conversion (Python does much less implicit conversion than JavaScript)
+# Implicit Conversion 
 try:
-    print(5 + "10") # Raises TypeError (unlike JavaScript which converts to string)
+    print(5 + "10") # Raises TypeError 
 except TypeError:
     print("Python requires explicit type conversion")
 
