@@ -1,4 +1,6 @@
-🐍 Python Learning Repository
+<img src="https://github.com/devicons/devicon/blob/v2.16.0/icons/python/python-original-wordmark.svg" height="80" alt="Python" />
+
+## Python Learning Repository 
 
 > **Welcome!** This repository is dedicated to learning, practicing, and mastering Python. Here, you'll find a growing collection of Python scripts, notes, and examples covering fundamental concepts and beyond.
 
