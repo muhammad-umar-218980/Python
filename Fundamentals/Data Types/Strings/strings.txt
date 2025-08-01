@@ -1,0 +1,26 @@
+In python, strings are sequences of characters enclosed in quotes. They can be single (' '), double (" "), or triple (''' ''' or """ """) quoted. Strings are immutable, meaning once created, they cannot be changed.
+
+
+1. Literal definitions
+   - single_quoted = 'Hello, world!'
+   - double_quoted = "Python is awesome"
+   - triple_quoted = """Multi-line
+     string example."""
+
+
+2. Raw strings
+   - raw_path = r"C:\Users\Muhammad"
+     Use raw strings to avoid escaping backslashes, especially in file paths and regex patterns.
+
+
+3. Byte strings
+   - byte_str = b"byte data"
+     Immutable sequences of bytes. Decode to convert back to text:
+     decoded = byte_str.decode('utf-8')
+
+4. f -strings
+   - name = "Alice"
+   - age = 30
+   - message = f"My name is {name} and I'm {age} years old."
+
+Top-level prints illustrate each type in action.

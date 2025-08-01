@@ -1,0 +1,16 @@
+These are the basic string operations in python
+
+1. Indexing and slicing
+   - s[0], s[-1] to access individual characters
+   - s[1:5], s[:3], s[3:] for substrings
+   - s[::2] to skip characters
+
+2. Concatenation and repetition
+   - a + b joins two strings
+   - a * n repeats a string n times
+
+3. Membership tests
+   - 'sub' in s returns True if substring found
+   - 'x' not in s returns True if substring absent
+
+Use these operations to navigate and build new strings.
