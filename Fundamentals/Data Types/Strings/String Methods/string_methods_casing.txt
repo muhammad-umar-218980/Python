@@ -1,0 +1,58 @@
+Examples tested:
+  - "hello world"  
+  - "PYTHON Programming"  
+  - "ßharp"  
+  - "This Is Title"  
+
+Methods covered:
+
+1. capitalize()  
+   - Description: Return a copy of the string with its first character converted to uppercase and the rest to lowercase.  
+   - Example:  
+     - "hello world".capitalize() → "Hello world"  
+     - "PYTHON Programming".capitalize() → "Python programming"
+
+2. lower()  
+   - Description: Return a copy of the string with all characters converted to lowercase.  
+   - Example:  
+     - "PYTHON Programming".lower() → "python programming"
+
+3. upper()  
+   - Description: Return a copy of the string with all characters converted to uppercase.  
+   - Example:  
+     - "hello world".upper() → "HELLO WORLD"
+
+4. swapcase()  
+   - Description: Return a copy of the string with uppercase letters converted to lowercase and vice versa.  
+   - Example:  
+     - "PyThOn".swapcase() → "pYtHoN"
+
+5. title()  
+   - Description: Return a titlecased version of the string, where the first letter of each word is uppercase and the rest are lowercase.  
+   - Example:  
+     - "hello world".title() → "Hello World"  
+     - "ßharp".title() → "ßharp" (ß is not changed because it isn’t recognized as the start of a “word” in titlecasing)
+
+6. casefold()  
+   - Description: Return a casefolded copy of the string, using an aggressive lowercasing algorithm that is suitable for caseless matching.  
+   - Example:  
+     - "ßharp".casefold() → "ssharp"
+
+7. islower()  
+   - Description: Return True if all cased characters in the string are lowercase and there is at least one cased character.  
+   - Example:  
+     - "hello world".islower() → True  
+     - "Hello".islower() → False
+
+8. isupper()  
+   - Description: Return True if all cased characters in the string are uppercase and there is at least one cased character.  
+   - Example:  
+     - "PYTHON".isupper() → True  
+     - "PyThOn".isupper() → False
+
+9. istitle()  
+   - Description: Return True if the string is titlecased (each word starts with an uppercase letter followed by lowercase letters).  
+   - Example:  
+     - "This Is Title".istitle() → True  
+     - "This is title".istitle() → False
+
