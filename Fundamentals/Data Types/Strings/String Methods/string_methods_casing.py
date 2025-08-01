@@ -16,7 +16,7 @@ for text in examples:
     print("-" * 40)
 
 
-"""# Output:
+"""Output:
 
 Original: hello world
  capitalize(): Hello world
