@@ -27,26 +27,30 @@ def check_difference(difference):
 
 
 def play_game(attempts, start, end, guessed_number, user_input):
+    score = 0
     while attempts != 0:
         if user_input == guessed_number:
             print("\nCongratulations! You guessed the number correctly.")
+            score  = score + 10
             break
         else:
             attempts -= 1
+            score -= 2
+            if score < 0:
+                score = 0
             if attempts == 0:
                 print(f"\nSorry, you've run out of attempts. The correct number was {guessed_number}.")
                 break
             else:
                 print(f"\nWrong guess! You have {attempts} attempts left.")
-                
+
                 difference = abs(user_input - guessed_number)
                 check_difference(difference)
 
 
                 user_input = int(input(f"Try again. Enter a number to guess between {start} - {end}: "))
                 user_input = number_checker(user_input, start, end)
-    
-
+    return score
 
 def game():
     print("\n---- WELCOME TO NUMBER GUESSING GAME ----\n")
@@ -61,17 +65,19 @@ def game():
     user_input = int(input(f"Enter a number to guess between {start} - {end}: "))
     user_input = number_checker(user_input, start, end)
 
-    play_game(attempts, start, end, guessed_number, user_input)
+    score =play_game(attempts, start, end, guessed_number, user_input)
+    print(f"\nYour final score for this round is: {score}")
 
+    return score
 
+total_score = 0
 
-game()
+while True:
+    score = game()
+    total_score += score
+    print(f"\n🏁 Your total score so far: {total_score}")
 
-
-play_again = input("\nDo you want to play again? (yes/no): ")
-
-while play_again.lower() == "yes":
-    game()
     play_again = input("\nDo you want to play again? (yes/no): ")
-else:
-    print("\nThanks for playing! Goodbye!")
+    if play_again.lower() != "yes":
+        print("\nThanks for playing! Goodbye!")
+        break
