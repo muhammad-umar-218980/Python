@@ -17,6 +17,14 @@ def number_checker(user_input,start,end):
 def random_integer_generator(start,end):
     return random.randint(start, end)
 
+def check_difference(difference):
+    if difference == 1:
+        print("You're very close!")
+    elif 2 <= difference <= 3:
+        print("You're not far away!")
+    else:
+        print("You're quite far away!")
+
 
 def play_game(attempts, start, end, guessed_number, user_input):
     while attempts != 0:
@@ -30,8 +38,12 @@ def play_game(attempts, start, end, guessed_number, user_input):
                 break
             else:
                 print(f"\nWrong guess! You have {attempts} attempts left.")
-                user_input = int(
-                    input(f"Try again. Enter a number to guess between {start} - {end}: "))
+                
+                difference = abs(user_input - guessed_number)
+                check_difference(difference)
+
+
+                user_input = int(input(f"Try again. Enter a number to guess between {start} - {end}: "))
                 user_input = number_checker(user_input, start, end)
     
 
