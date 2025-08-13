@@ -32,8 +32,6 @@ print(f"\nAverage Marks: {average}")
 
 
 
-
-# Step 5: Grade evaluation
 if average >= 80:
     grade = "A"
 elif average >= 60:
